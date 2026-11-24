@@ -44,7 +44,7 @@ with col3:
                     st. write(f"{oldTime} -> {newTime}")
         else:
             st.empty()
-
+    st.write("Autorizado")
     with st.container(border=True):
         if result != None:
             for k,v in result.situationUpdate.items():

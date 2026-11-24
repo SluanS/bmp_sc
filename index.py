@@ -60,7 +60,7 @@ def baterMapa(dia, planilhaHorario, planilhaNeoh):
         if k in updatedGroup:
             currentTime = updatedGroup[k][0]
             if (v[0] != currentTime):
-                newTime[f"{k}"] = [currentTime,v[0]]
+                newTime[f"{k}"] = [v[0],currentTime]
             #Verfica se houvera autorizações
             if (v[1] == "ANÁLISE OPERADORA" or v[1] == "ANALISE OPERADORA"):
                 newSituation = updatedGroup[f"{k}"][1]
